@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Navbar } from "react-bootstrap/Navbar";
+import Navbar from "./Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import "./Navbar.css";
 import Home from "./Home";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>

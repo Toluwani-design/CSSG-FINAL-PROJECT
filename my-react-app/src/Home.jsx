@@ -19,7 +19,7 @@ function Home() {
         style={{ width: "100px", marginRight: "20px" }}
       />
       <img
-        src={require("./assets/react.svg")}
+        src={require("./assets/react.svg").default}
         alt="React Logo"
         style={{ width: "100px" }}
       />
