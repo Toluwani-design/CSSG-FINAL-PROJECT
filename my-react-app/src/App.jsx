@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navbar, Nav, NavItem } from "react-bootstrap";
+import { Navbar } from "react-bootstrap/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Home";
