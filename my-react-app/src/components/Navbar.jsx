@@ -1,29 +1,21 @@
 // src/components/Navbar.jsx
 import React from "react";
-import { Link } from "react-router-dom";
-import "./Navbar.css";
 
-const Navbar = () => {
+export default function Navbar({ onNavigate }) {
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
-          Triangle Volunteering
-        </Link>
-        <ul className="navbar-links">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/Opportunities">Opportunities</Link>
-          </li>
-          <li>
-            <Link to="/VolunteerForm">Sign Up</Link>
-          </li>
-        </ul>
-      </div>
+    <nav
+      style={{
+        background: "#2563eb",
+        color: "#fff",
+        padding: "1rem",
+        display: "flex",
+        gap: "2rem",
+      }}
+    >
+      <span style={{ fontWeight: "bold" }}>Triangle Volunteering</span>
+      <button onClick={() => onNavigate("home")}>Home</button>
+      <button onClick={() => onNavigate("opportunities")}>Opportunities</button>
+      <button onClick={() => onNavigate("form")}>Sign Up</button>
     </nav>
   );
-};
-
-export default Navbar;
+}
