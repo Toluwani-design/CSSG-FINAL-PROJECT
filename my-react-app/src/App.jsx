@@ -27,7 +27,7 @@ export default function App() {
   return (
     <div>
       <Navbar onNavigate={handleNavigate} />
-      {page === "home" && <Home />}
+      {page === "home" && <Home onNavigate={handleNavigate} />}
       {page === "opportunities" && <Opportunities onSignUp={handleSignUp} />}
       {page === "form" && (
         <VolunteerForm

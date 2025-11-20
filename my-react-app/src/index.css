@@ -1,11 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --primary-blue: #2563eb;
+  --secondary-blue: #3b82f6;
+  --light-blue: #dbeafe;
+  --dark-grey: #374151;
+  --medium-grey: #6b7280;
+  --light-grey: #f3f4f6;
+  --black: #111827;
+  --white: #ffffff;
+
+  color: var(--black);
+  background-color: var(--light-grey);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,10 +36,10 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--light-grey);
+  color: var(--black);
 }
 
 h1 {
