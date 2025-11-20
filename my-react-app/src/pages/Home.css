@@ -1,0 +1,158 @@
+/* src/pages/Home.css */
+.home {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #2563eb, #1e40af);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-button {
+  background-color: white;
+  color: #2563eb;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #f0f9ff;
+}
+
+/* Mission Section */
+.mission {
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+}
+
+.mission-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.mission-text {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+/* Stats Section */
+.stats {
+  background-color: white;
+  padding: 4rem 2rem;
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 1rem;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+/* Call to Action Section */
+.cta {
+  padding: 4rem 2rem;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.cta-text {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #1e40af;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title,
+  .cta-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,21 +1,19 @@
-import React, { useState } from "react";
-import Navbar from "./Navbar";
+// src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
-import "./Navbar.css";
-import Home from "./Home";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Opportunities from "./pages/Opportunities";
+import VolunteerForm from "./pages/VolunteerForm";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/opportunities" element={<Opportunities />} />
+        <Route path="/volunteer" element={<VolunteerForm />} />
+      </Routes>
     </Router>
   );
 }
